@@ -63,16 +63,16 @@ function registerValidate() {
   );
   if (emailFormat2.test(email2) && passwordFormat2.test(password2)) {
     if (password2 != confirmpassword2) {
-      window.location = "Register.html";
+      
       alert("Password do not match🙂");
-      return false;
+      
     } else {
       window.location = "Registeredtrue.html";
       alert("Registration Passed😎");
-      return true;
+      
     }
   } else {
-    window.location = "Register.html";
+   
     alert("Registration failed😢");
   }
 }
