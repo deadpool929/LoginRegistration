@@ -61,18 +61,11 @@ function registerValidate() {
   let confirmpassword2 = String(
     document.getElementById("confirm_password").value
   );
-  if (emailFormat2.test(email2) && passwordFormat2.test(password2)) {
-    if (password2 != confirmpassword2) {
-      
-      alert("Password do not match🙂");
-      
-    } else {
+  if (emailFormat2.test(email2) && passwordFormat2.test(password2) && password2 == confirmpassword2) {
       window.location = "Registeredtrue.html";
       alert("Registration Passed😎");
-      
-    }
-  } else {
-   
-    alert("Registration failed😢");
+     }
+ else {
+      alert("Registration failed😢");
   }
 }
